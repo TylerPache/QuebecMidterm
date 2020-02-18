@@ -1,0 +1,358 @@
+body {
+    margin: 0px;
+    background-image: url("../images/Quebec-city.png");
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/** navbar css **/
+
+nav ul {
+    margin: auto;
+    list-style: none;
+    overflow: hidden;
+    background-color: #00CED1;
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+nav li {
+
+    display: inline-block;
+    float: none;
+}
+
+nav li > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+
+}
+
+nav li a:hover {
+    background-color: #000033;
+    color: white;
+}
+
+
+/** Positioning for elements **/
+
+form {
+    margin-left: 11em;
+    font-family: sans-serif;
+    background-color: #00CED1;
+    position: absolute;
+    top: 20%;
+    margin-bottom: 5em;
+}
+
+label {
+    float: left;
+}
+
+article {
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 30em;
+    text-align: justify;
+    font-size: 1.75em;
+    border: solid black 1px;
+}
+
+#headingquestion {
+    position: relative;
+    top: -15px;
+    left: 20px;
+}
+
+#numgroup {
+    position: relative;
+    top: -2px;
+    left: 20px;
+}
+
+#visit {
+    position: relative;
+    bottom: .5em;
+    left: 20px;
+}
+
+#favplace {
+    position: relative;
+    top: 15px;
+
+}
+
+#rating {
+    position: relative;
+    top: 2em;
+    left: 40px;
+}
+
+#button {
+    position: relative;
+    border: lightblue 2px solid;
+    top: 40px;
+    left: 85px;
+    width: 58px;
+}
+
+#name {
+    position: relative;
+    top: -2em;
+    display: inline;
+    left: 20px;
+}
+
+.astric {
+    color: red;
+    font-size: 40px;
+    position: relative;
+    top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+footer {
+
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+#footer {
+    font-size: 2em;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    color: black;
+    text-align: center;
+
+}
+
+#imageslideshow {
+    text-align: center;
+}
+
+#indexbox {
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    text-align: center;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background-color: #00CED1;
+    font-size: 20px;
+    width: 80%;
+
+}
+
+#contacthead {
+    text-align: center;
+    font-size: 30px;
+}
+
+#contactinfo {
+    text-align: left;
+}
+
+.box {
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin: auto;
+    background-color: #00CED1;
+    font-size: 1.35em;
+    width: 80%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+p.foodbox {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+p.faqbox {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+p.sumbox {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+p.wintbox {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+p.poibox {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.contactbox {
+    margin-right: 2em;
+    margin-left: 2em;
+
+}
+
+img {
+    vertical-align: middle;
+}
+
+img.food {
+    margin-bottom: 2em;
+    float: right;
+    margin: 20px;
+    width: 20%;
+}
+
+img.food2 {
+    margin-bottom: 2em;
+    float: left;
+    margin: 20px;
+    width: 20%
+}
+
+img.facts {
+    margin-bottom: 2em;
+    float: left;
+    margin: 20px;
+    width: 20%;
+}
+
+img.facts2 {
+    margin-bottom: 2em;
+    float: right;
+    margin: 20px;
+    width: 20%;
+}
+
+img.sum {
+    margin-bottom: 2em;
+    float: right;
+    margin: 20px;
+    width: 30%;
+}
+
+img.sum2 {
+    margin-bottom: 2em;
+    float: left;
+    margin: 20px;
+    width: 30%;
+}
+
+img.winter {
+    margin-bottom: 2em;
+    float: left;
+    margin: 20px;
+    width: 30%;
+}
+
+img.winter2 {
+    margin-bottom: 2em;
+    float: right;
+    margin: 20px;
+    width: 30%;
+}
+
+img.poi {
+    margin-bottom: 2em;
+    float: right;
+    margin: 20px;
+    width: 30%;
+}
+
+img.poi2 {
+    margin-bottom: 2em;
+    float: left;
+    margin: 20px;
+    width: 30%;
+
+}
+
+
+img.contact {
+    margin-bottom: 2em;
+    float: right;
+    margin: 20px;
+    width: 20%;
+}
+
+img.mySlides {
+    display: none;
+}
+
+/* Slideshow container */
+#slideshow-container {
+    width: 80%;
+    position: relative;
+    margin: auto;
+    margin-top: 2em;
+}
+
+h1 {
+    text-align: center;
+    color: cyan
+}
+
+td {
+    text-align: left;
+    border-spacing: inherit;
+    font-size: .75em;
+}
+
+.refbox {
+    width: auto;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    text-align: center;
+    background-color: #00CED1;
+    font-size: 1.35em;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+td a {
+
+    text-decoration-line: underline;
+}
+
+img.ref {
+    width: 200px;
+    height: auto;
+}

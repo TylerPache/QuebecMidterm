@@ -1,0 +1,125 @@
+<!-- author Tyler Pache
+     date 2/17/2019
+	 description survey page for midterm project on Qu&#233bec
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/midterm.css">
+
+    <script src="assets/js/midterm.js"> </script>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <ul>
+            <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/index.html"> Home </a> </li>
+            <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/summeractivities.html"> Summer Activities </a> </li>
+            <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/winteractivities.html"> Winter Activities</a></li>
+            <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/food.html"> Food </a> </li>
+            <li> <a style="padding: 0px;" href="https://www.quebecregion.com/en/"> <img src="assets/images/quebec_flag.png" alt="Qu&#233bec Flag" title="Qu&#233bec Flag" width="200" /> </a> </li>
+            <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/poi.html"> Points of Interest </a> </li>
+            <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/fastfacts.html"> Fast Facts </a> </li>
+            <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/survey.html"> Survey </a> </li>
+            <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/references.html"> References </a></li>
+        </ul>
+    </nav>
+
+    <form action="process2.php" method="POST" onsubmit="return validateForm();">
+
+
+
+        <div id="headingquestion">
+            <h2 class="underline">
+                <!-- add bottom border to this -->
+                Please leave us some feedback
+            </h2>
+        </div>
+
+        <div id="name">
+            Enter your name
+            <input type="text" id="visitor" name="visitor" placeholder="Required Entry">
+            <span class="astric"> * </span>
+        </div>
+
+        <!-- Group number form-->
+
+        <div id="numgroup">
+            Number that have visited:
+            <input type="number" name="groupNum" min="0" max="100" step="1" value="0" style="margin-bottom: 20px;">
+        </div>
+
+        <!-- Date form when they visited -->
+        <div id="visit">
+            When did you visit?
+            <input type="date" id="visitDate" name="vdate" />
+            <span class="astric"> * </span><br />
+            <p id="errorMessage"></p>
+        </div>
+
+
+        <!-- Field for favorite place -->
+        <div id="favplace">
+
+            <fieldset>
+                <legend>Favorite Place - Must Select one</legend>
+                <input type="radio" name="fplace" value="Ste. Anne De Beaupre" id="adb" onclick="turnoff();"><label for="adb">Ste. Anne De Beaupr&#233</label><br>
+                <input type="radio" name="fplace" value="Snow Park" id="sp" onclick="turnoff();"><label for="sp">Village des Sports Snow Park</label><br>
+                <input type="radio" name="fplace" value="Erabliere" id="elb" onclick="turnoff();"><label for="elb">&#201rabli&#232re du Lac Beauport</label><br>
+                <input type="radio" onclick="turnoff();" name="fplace" value="Atelier Pare" id="ap"><label for="ap">Atelier Par&#233</label><br>
+                <input type="radio" onclick="turnoff();" name="fplace" value="Montmorency Falls" id="mf"><label for="mf">Montmorency Falls</label><br>
+                <input type="radio" name="fplace" value="Other" id="other" onclick="otherplaces();"><label for="other">Other</label>
+                &nbsp;&nbsp;
+                <input name="other_places" placeholder="Enter Place" type="text" id="other_places" size="60">
+
+                <br>
+            </fieldset>
+        </div><!-- end of radio buttons -->
+
+        <div id="rating">
+            <!-- Scrollbar to rate visit -->
+            <br>Please rate your visit to Qu&#233bec<br>
+            <p>0
+                <input type="range" name="rating" min="0" max="10" step="1" list="set">
+                <datalist id="set">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </datalist>
+                10</p>
+        </div><!-- end of rating bar -->
+
+
+        <div id="button">
+            <input type="submit">
+        </div><!-- end of div for submit button -->
+    </form>
+    <script src="assets/js/midterm.js"></script>
+    <footer>
+        <div id="footer">
+            <nav>
+                <ul>
+                    <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/grading.html"> Grading Page </a></li>
+                    <li> <a href="https://people.rit.edu/~ttp4725/iste240/Midterm/contact.html"> Contact </a></li>
+                    <li> <a href="https://people.rit.edu/~ttp4725/iste240/">ISTE 240 main page </a> </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
